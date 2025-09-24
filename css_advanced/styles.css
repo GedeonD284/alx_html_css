@@ -1,0 +1,299 @@
+#upperPart{
+    background-image: url("./assets/Object.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#navbarContainer{
+    position: absolute;
+    width: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar{
+    display: flex;;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+}
+#linkContainer{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    font-size: small;
+    text-decoration: none;
+    margin: 30px;
+}
+.list{
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+}
+#upperPartChild{
+    display: block;
+ 
+    padding: 20px;
+    justify-content: center;
+
+    
+}
+.btn{
+    background-color: blueviolet;
+    border-radius: 20px;
+    padding: 12px;
+    color: white;
+    margin-top: 22px;
+}
+.learnFromOthers{
+    padding-top: 12px;
+}
+.learnFromOthersChild{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+}
+
+.cardsPhoto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+  }
+  .cards {
+        display: block;
+        margin: 40px;
+      text-align: center;
+      color: white;
+  }
+
+  .pinkPart{
+    background-color: rgb(231, 131, 198);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: white;
+  }
+  .smile{
+
+    display: flex;
+    height: 450px;
+    padding-bottom: 10px;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+  
+    
+  }
+
+
+
+.tutorial-card {
+  
+    max-width: 300px;
+    background-color: white;
+ 
+    border-radius: 10px;
+   
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+ 
+    
+    
+}
+
+.card-content {
+    padding: 15px;
+}
+
+
+.card-image-wrapper {
+ 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 4px;
+ 
+    padding-top: 100%; 
+}
+
+.card-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+   
+    object-fit: cover; 
+}
+
+
+.play-button-overlay {
+   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+   
+    border: 1px solid white; 
+}
+
+
+.card-title {
+    color: #333;
+    font-size: 1.2em;
+    margin: 0 0 5px 0;
+}
+
+.card-description {
+    color: #888;
+    font-size: 0.9em;
+    margin: 0 0 15px 0;
+    line-height: 1.4;
+}
+
+
+.card-author {
+    display: flex; 
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.author-avatar {
+    
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 8px;
+}
+
+.author-name {
+   
+    color: #9356DC; 
+    font-size: 0.9em;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+.card-footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.card-rating {
+    display: flex; 
+    gap: 3px; 
+    font-size: 14px;
+}
+
+
+.star-filled {
+    color: #9356DC; 
+}
+
+.star-empty {
+    color: #ccc;
+}
+
+.card-duration {
+    color: #9356DC; 
+    font-size: 0.9em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.contained{
+    display: flex;
+  
+    justify-content: space-around;
+   
+    
+}
+.container{
+background-color: rgb(3, 1, 14);
+padding: 20px;
+text-align: center;
+color: white;
+
+
+}
+.containedChild{
+   
+    text-align: center;
+    width: 20%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 250px;
+}
+.faq {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, auto);  
+    gap: 20px; 
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .faqChild {
+    background-color: white; 
+    padding: 20px;
+    border-radius: 8px;
+    color: gray;
+  }
+
+  .footer {
+    background-color: #111;  
+    color: #fff;
+    padding: 20px 40px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-logo {
+    height: 40px;
+  }
+  
+  .footer-center {
+    font-size: 14px;
+    opacity: 0.8;
+  }
+  
+  .footer-right i {
+    font-size: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-right i:hover {
+    color: #f39c12; 
+  }
+  
+  

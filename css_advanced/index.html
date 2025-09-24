@@ -5,58 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/4a2b055604.js" crossorigin="anonymous"></script>
     <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <img src="https://fakeimg.pl/250x250?text=Sample+Logo" alt="logo">
+    <header id="navbarContainer">
+        <nav id="navbar">
+            <img src="./assets/logo.png" alt="logo" style="height: 30px;">
           
-            <ul>
-                <li><a href="#">COURSE</a></li>
-                <li><a href="#">PRICING</a></li>
-                <li><a href="#">LOGIN</a></li>
+            <ul id="linkContainer">
+                <li><a class="list" href="#">COURSE</a></li>
+                <li><a class="list" href="#">PRICING</a></li>
+                <li><a class="list" href="#">LOGIN</a></li>
             </ul>
         </nav>
         
     </header>
     <main>
-        <section>
-            <div>
-                <h1>Get schooled</h1>
-                <span>SMILES</span>
-                <span>GRIN</span>
-                <span>LAUGH</span>
-                <button>REGISTER FOR FREE</button>
+        <section id="upperPart">
+            <div id="upperPartChild">
+                <h1 style="font-size:60px; color: white;">Get schooled</h1>
+                <div style="display: flex; gap: 20px; justify-content: center;">
+                    <span>SMILES</span>
+                    <span>GRIN</span>
+                    <span>LAUGH</span>
+                </div>
+                <button class="btn">REGISTER FOR FREE</button>
             </div>
-            <div>
-                <h2>Learn from the pros</h2>
-                <div>
-                    <div>
-                        <img src="./images/1 (3).png" alt="">
+            <div class="learnFromOthers">
+                <h2><span style="color: blueviolet;">Learn</span> from the pros</h2>
+                <div class="learnFromOthersChild">
+                    <div class="cards">
+                        <img src="./assets/1.png" alt="" class="cardsPhoto">
                         <h3>Phillip Massey</h3>
-                        <p>« Smile of the year » 2018 - 2019</p>
+                        <p>« Smile of the year » <br> 2018 - 2019</p>
                     </div>
-                    <div>
-                        <img src="./images/6.png" alt="">
+                    <div class="cards">
+                        <img src="./assets/6.png" alt="" class="cardsPhoto">
                         <h3>Nannie Lawrence</h3>
-                        <p>Best « little smile » 2017</p>
+                        <p>Best « little smile » <br> 2017</p>
                     </div>
-                    <div>
-                        <img src="./images/7.png" alt="">
+                    <div class="cards">
+                        <img src="./assets/7.png" alt="" class="cardsPhoto">
                         <h3>Bruce Walters</h3>
-                        <p>Best « Friend Smile » live performance 2019</p>
+                        <p>Best « Friend Smile »<br> live performance  2019</p>
                     </div>
-                    <div>
-                        <img src="./images/8.png" alt="">
+                    <div class="cards">
+                        <img src="./assets/8.png" alt="" class="cardsPhoto">
                         <h3>Henry Hughes</h3>
-                        <p>« 24h smiles » winner 2016 - 2019</p>
+                        <p>« 24h smiles » winner <br> 2016 - 2019</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
+        <section class="pinkPart">
             <div>
-                <img src="./images/Bitmap.png" alt="image">
+                <img src="./assets/5.png" alt="image">
             </div>
             <div>
                 <blockquote>« Those tutorials are concise and go straight to the point. I can’t think of a better place to learn smiling. And it’s so fun!</blockquote>
@@ -64,148 +67,206 @@
                 <P>weather presenter</P>
             </div>
         </section>
-        <section>
+        <div style="margin-left: 40%; padding-bottom: 20px;">
             <h2>Most popular tutorials</h2>
-            <div>
-                <img src="./images/Bitmap (1).png" alt="">
-                <h3>Diagonal Smile</h3>
-                <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-                <div>
-                    <img src="./images/1 (3).png" alt="">
-                    <h4>Phillip Massey</h4>
+        </div>
+        <section class="smile">
+            
+            <div class="tutorial-card">
+                <div class="card-image-wrapper">
+                    <img src="./assets/1.png" alt="Diagonas" class="card-image">
+                    
                 </div>
-                <div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                    <div><i class="fa-solid fa-star"></i></div>
+                
+                <div class="card-content">
+                    <h3 class="card-title">Natural Smile</h3>
+                    <p class="card-description">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                    
+                    <div class="card-author">
+                        <img src="./assets/2.png" alt="Phillip" class="author-avatar">
+                        <h4 class="author-name">Phillip Massey</h4>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <div class="card-rating">
+                            <i class="fa-solid fa-star star-filled"></i>
+                            <i class="fa-solid fa-star star-filled"></i>
+                            <i class="fa-solid fa-star star-filled"></i>
+                            <i class="fa-solid fa-star star-filled"></i>
+                            <i class="fa-solid fa-star star-empty"></i>
+                        </div>
+                        <p class="card-duration">8 min</p>
+                    </div>
                 </div>
-                <p>8 min</p>
             </div>
-            <div>
-                <img src="./images/Bitmap (4).png" alt="">
-                <h3>Happy Smile</h3>
-                <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-                <div>
-                    <img src="./images/1 (3).png" alt="">
-                    <h4>Phillip Massey</h4>
+           
+            <div class="tutorial-card">
+                <div class="card-image-wrapper">
+                    <img src="./assets/1.png" alt="Diagonas" class="card-image">
+                    
                 </div>
-                <div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                    <div><i class="fa-solid fa-star"></i></div>
+                
+                <div class="card-content">
+                    <h3 class="card-title">Natural Smile</h3>
+                    <p class="card-description">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                    
+                    <div class="card-author">
+                        <img src="./assets/2.png" alt="Phillip" class="author-avatar">
+                        <h4 class="author-name">Phillip Massey</h4>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <div class="card-rating">
+                            <i class="fa-solid fa-star star-filled"></i>
+                            <i class="fa-solid fa-star star-filled"></i>
+                            <i class="fa-solid fa-star star-filled"></i>
+                            <i class="fa-solid fa-star star-filled"></i>
+                            <i class="fa-solid fa-star star-empty"></i>
+                        </div>
+                        <p class="card-duration">8 min</p>
+                    </div>
                 </div>
-                <p>8 min</p>
             </div>
-            <div>
-                <img src="./images/Bitmap (3).png" alt="">
-                <h3>Natural Smile</h3>
-                <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-                <div>
-                    <img src="./images/1 (3).png" alt="">
-                    <h4>Phillip Massey</h4>
+      
+            <div class="tutorial-card">
+                <div class="card-image-wrapper">
+                    <img src="./assets/1.png" alt="Diagonas" class="card-image">
+                    
                 </div>
-                <div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                    <div><i class="fa-solid fa-star"></i></div>
+                
+                <div class="card-content">
+                    <h3 class="card-title">Natural Smile</h3>
+                    <p class="card-description">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                    
+                    <div class="card-author">
+                        <img src="./assets/2.png" alt="Phillip" class="author-avatar">
+                        <h4 class="author-name">Phillip Massey</h4>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <div class="card-rating">
+                            <i class="fa-solid fa-star star-filled"></i>
+                            <i class="fa-solid fa-star star-filled"></i>
+                            <i class="fa-solid fa-star star-filled"></i>
+                            <i class="fa-solid fa-star star-filled"></i>
+                            <i class="fa-solid fa-star star-empty"></i>
+                        </div>
+                        <p class="card-duration">8 min</p>
+                    </div>
                 </div>
-                <p>8 min</p>
             </div>
-            <div>
-                <img src="./images/Bitmap (2).png" alt="">
-                <h3>Sad Smile</h3>
-                <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-                <div>
-                    <img src="./images/1 (3).png" alt="">
-                    <h4>Phillip Massey</h4>
+     
+            <div class="tutorial-card">
+                <div class="card-image-wrapper">
+                    <img src="./assets/1.png" alt="Diagonas" class="card-image">
+                    
                 </div>
-                <div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                    <div><i class="fa-solid fa-star"></i></div>
+                
+                <div class="card-content">
+                    <h3 class="card-title">Natural Smile</h3>
+                    <p class="card-description">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                    
+                    <div class="card-author">
+                        <img src="./assets/2.png" alt="Phillip" class="author-avatar">
+                        <h4 class="author-name">Phillip Massey</h4>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <div class="card-rating">
+                            <i class="fa-solid fa-star star-filled"></i>
+                            <i class="fa-solid fa-star star-filled"></i>
+                            <i class="fa-solid fa-star star-filled"></i>
+                            <i class="fa-solid fa-star star-filled"></i>
+                            <i class="fa-solid fa-star star-empty"></i>
+                        </div>
+                        <p class="card-duration">8 min</p>
+                    </div>
                 </div>
-                <p>8 min</p>
             </div>
         </section>
-        <section>
+        <section class="container">
             <h2>Free membership</h2>
-            <div>
-                <img src="./images/smile.svg" alt="">
-                <h3>Lorem Ipsum</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="contained">
+                <div class="containedChild">
+                    <img src="./assets/smile.png" alt="">
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="containedChild">
+                    <img src="./assets/smile.png" alt="">
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="containedChild">
+                    <img src="./assets/smile.png" alt="">
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="containedChild">
+                    <img src="./assets/smile.png" alt="">
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
             </div>
-            <div>
-                <img src="./images/smile.svg" alt="">
-                <h3>Lorem Ipsum</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div>
-                <img src="./images/smile.svg" alt="">
-                <h3>Lorem Ipsum</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div>
-                <img src="./images/smile.svg" alt="">
-                <h3>Lorem Ipsum</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <button>REGISTER FOR FREE</button>
+            <button class="btn">REGISTER FOR FREE</button>
         </section>
         <section>
             <h2>F.A.Q</h2>
-            <div>
-                <div>
-                    <div>
-                        <h3>How does this work?</h3>
-                    </div>
-                    <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <div class="faq">
+                
+                    <div class="faqChild">
+                        <div>
+                            <h3>How does this work?</h3>
+                        </div>
+                        <div>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
                     </div>
 
+                    <div class="faqChild">
+                        <div>
+                            <h3>How does this work?</h3>
+                        </div>
+                        <div>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                    </div>
+                
+                   <div class="faqChild">
                     <div>
                         <h3>How does this work?</h3>
                     </div>
                     <div>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </div>
-                </div>
-                <div>
-                    <div>
-                        <h3>How does this work?</h3>
-                    </div>
-                    <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </div>
-                    <div>
-                        <h3>How does this work?</h3>
-                    </div>
-                    <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                   </div>
+                    <div class="faqChild">
+                        <div>
+                            <h3>How does this work?</h3>
+                        </div>
+                        <div>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <section>
-            <div>
-                <img src="https://fakeimg.pl/250x250?text=Sample+Logo" alt="logo">
-                <div>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-            </div>
-            <p>©smileschool 2020</p>
+    <footer class="footer">
+        <section class="footer-content">
+          <div class="footer-left">
+            <img src="./assets/logo.png" alt="logo" class="footer-logo">
+          </div>
+      
+          <p class="footer-center">© smileschool 2020</p>
+      
+          <div class="footer-right">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
         </section>
-    </footer>
+      </footer>
+      
 </body>
 </html>
